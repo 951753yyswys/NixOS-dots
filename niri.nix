@@ -13,6 +13,14 @@ in
       programs = {
         niri = {
 	  settings = {
+	    outputs = {
+	      Virtual-1 = {
+	        mode = {
+		  width = 1920;
+		  height = 1080;
+		};
+	      };
+	    };
 	    spawn-at-startup = [
 	      {
 	        command = [
