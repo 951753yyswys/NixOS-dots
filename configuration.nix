@@ -95,7 +95,23 @@
     git
     perl
     cargo
-    qq
+    qq 
+    killall
+    gcc
+    clang
+    gdb
+    cmake
+    ninja
+    meson
+    valgrind
+    cppcheck
+    clang-tools
+    xwayland-satellite
+    kdePackages.kirigami
+    kdePackages.kirigami-addons
+    kdePackages.qt6ct
+    libsForQt5.kirigami2
+    libsForQt5.kirigami-addons
   ];
 
   nixpkgs.config.allowUnfree = true;

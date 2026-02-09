@@ -10,6 +10,7 @@ in
   home-manager.users.Qaaxaap = 
     { config, lib, ... }:
     {
+     #  home.sessionVariables = { QT_QPA_PLATFORMTHEME = "kde"; }; 
       programs = {
         niri = {
 	  settings = {
@@ -31,6 +32,36 @@ in
 	    binds = with config.lib.niri.actions; {
 	      "Mod+Return".action.spawn = "kitty";
 	      "Mod+A".action.spawn = noctalia "launcher toggle";
+	    };
+	    environment = {
+	          QT_QPA_PLATFORMTHEME = "qt6ct";
+		  # ALL_PROXY "http://127.0.0.1:7890"
+		  LANG = "zh_CN.UTF-8";
+		  LC_CTYPE = "zh_CN.UTF-8";
+		  LC_NUMERIC = "zh_CN.UTF-8";
+		  LC_TIME = "zh_CN.UTF-8";
+		  LC_COLLATE = "zh_CN.UTF-8";
+		  LC_MONETARY = "zh_CN.UTF-8";
+		  LC_MESSAGES = "zh_CN.UTF-8";
+		  LC_PAPER = "zh_CN.UTF-8";
+		  LC_NAME = "zh_CN.UTF-8";
+		  LC_ADDRESS = "zh_CN.UTF-8";
+		  LC_TELEPHONE = "zh_CN.UTF-8";
+		  LC_MEASUREMENT = "zh_CN.UTF-8";
+		  LC_IDENTIFICATION = "zh_CN.UTF-8";
+		  LC_ALL = null;
+		  # XDG_DATA_DIRS "$HOME/.local/share" "$XDG_DATA_DIRS"
+		  QT_IM_MODULE = "fcitx";
+		  # https://fcitx-im.org/wiki/Using_Fcitx_5_on_Wayland#Sway
+		  XMODIFIERS = "@im=fcitx";
+		  QT_IM_MODULES = "wayland;fcitx";
+		  GTK_IM_MODULE = null;
+		  SDL_IM_MODULE = null;
+		  GLFW_IM_MODULE = null;
+  		  ICON_THEME = "breeze";
+		  GTK_THEME = "Breeze";
+		  XCURSOR_THEME = "breeze_cursors";
+		  XDG_DATA_DIRS = "/run/current-system/sw/share:$XDG_DATA_DIRS";
 	    };
 	  };
 	};
