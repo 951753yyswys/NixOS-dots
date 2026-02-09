@@ -26,6 +26,7 @@
        ./noctalia.nix
        ./chinese.nix
        ./niri.nix
+       ./zsh.nix
       ];
     }; 
   };
