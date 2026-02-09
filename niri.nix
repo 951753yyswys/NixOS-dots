@@ -14,6 +14,18 @@ in
       programs = {
         niri = {
 	  settings = {
+            prefer-no-csd = true;
+	    window-rules = [
+	      {
+	        clip-to-geometry = true;
+		geometry-corner-radius = {
+		  bottom-left = 12.0;
+		  bottom-right = 12.0;
+		  top-left = 12.0;
+		  top-right = 12.0;
+		};
+	      }
+	    ];
 	    outputs = {
 	      Virtual-1 = {
 	        mode = {
@@ -32,6 +44,12 @@ in
 	    binds = with config.lib.niri.actions; {
 	      "Mod+Return".action.spawn = "kitty";
 	      "Mod+A".action.spawn = noctalia "launcher toggle";
+	      "Mod+Q" = { repeat = false; action.close-window = []; };
+	      "Mod+Tab" = { repeat = false; action.toggle-overview = []; };
+	      "Mod+Left".action.focus-column-left = [];
+	      "Mod+Right".action.focus-column-right = [];
+	      "Mod+Up".action.focus-window-up = [];
+	      "Mod+Down".action.focus-window-down = [];
 	    };
 	    environment = {
 	          QT_QPA_PLATFORMTHEME = "qt6ct";
