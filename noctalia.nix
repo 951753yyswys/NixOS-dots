@@ -28,7 +28,7 @@
               {
 	        hideUnoccupied = false;
 		id = "Workspace";
-		iabelMode = "none";
+		labelMode = "none";
               }
             ];
 	    right = [
