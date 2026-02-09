@@ -106,6 +106,7 @@
     valgrind
     cppcheck
     clang-tools
+    vscode
     xwayland-satellite
     kdePackages.kirigami
     kdePackages.kirigami-addons
