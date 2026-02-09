@@ -231,7 +231,7 @@
           boxBorderEnabled = false;
         };
         location = {
-          name = "Tokyo";
+          name = "Xi'an";
           weatherEnabled = true;
           weatherShowEffects = true;
           useFahrenheit = false;
