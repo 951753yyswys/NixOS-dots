@@ -28,12 +28,12 @@
               {
 	        hideUnoccupied = false;
 		id = "Workspace";
-		labelMode = "none";
+		labelMode = "index";
               }
             ];
 	    right = [
 	      {
-	        alwaysShowPercentage = false;
+	        # alwaysShowPercentage = false;
 		id = "Battery";
 		warningThreshold = 30;
 	      }
@@ -41,8 +41,8 @@
 	        formatHorizontal = "HH:mm";
 		formatVertical = "HH mm";
 		id = "Clock";
-		useMonospacedFont = true;
-		usePrimaryColor = true;
+		# useMonospacedFont = true;
+		# usePrimaryColor = true;
 	      }
 	    ];
           };
