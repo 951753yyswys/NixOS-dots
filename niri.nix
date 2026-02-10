@@ -26,6 +26,14 @@ in
 		};
 	      }
 	    ];
+	    layout = {
+	      default-column-width = {};
+	      preset-column-widths = [
+	        { proportion = 1. / 3.; }
+		{ proportion = 1. / 2.; }
+		{ proportion = 2. / 3.; }
+	      ];
+	    };
 	    outputs = {
 	      Virtual-1 = {
 	        mode = {
@@ -54,6 +62,9 @@ in
 	      "Mod+Down".action.focus-window-down = [];
 	      "Mod+Page_Up".action.focus-workspace-up = [];
 	      "Mod+Page_Down".action.focus-workspace-down = [];
+	      "Mod+R".action.switch-preset-column-width = [];
+	      "Mod+Minus".action.set-window-width = "-1%";
+	      "Mod+Equal".action.set-window-width = "+1%";
 	    };
 	    environment = {
 	          QT_QPA_PLATFORMTHEME = "qt6ct";
