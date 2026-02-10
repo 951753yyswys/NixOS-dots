@@ -44,12 +44,16 @@ in
 	    binds = with config.lib.niri.actions; {
 	      "Mod+Return".action.spawn = "kitty";
 	      "Mod+A".action.spawn = noctalia "launcher toggle";
+	      "Mod+D".action.spawn = "Dolphin";
+	      "Mod+W".action.spawn = "firefox";
 	      "Mod+Q" = { repeat = false; action.close-window = []; };
 	      "Mod+Tab" = { repeat = false; action.toggle-overview = []; };
 	      "Mod+Left".action.focus-column-left = [];
 	      "Mod+Right".action.focus-column-right = [];
 	      "Mod+Up".action.focus-window-up = [];
 	      "Mod+Down".action.focus-window-down = [];
+	      "Mod+Page_Up".action.focus-workspace-up = [];
+	      "Mod+Page_Down".action.focus-workspace-down = [];
 	    };
 	    environment = {
 	          QT_QPA_PLATFORMTHEME = "qt6ct";
