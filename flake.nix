@@ -27,6 +27,7 @@
        ./chinese.nix
        ./niri.nix
        ./zsh.nix
+       ./home.nix
       ];
     }; 
   };
