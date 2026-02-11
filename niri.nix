@@ -65,6 +65,7 @@ in
 	      "Mod+R".action.switch-preset-column-width = [];
 	      "Mod+Minus".action.set-window-width = "-1%";
 	      "Mod+Equal".action.set-window-width = "+1%";
+              "Mod+Shift+S".action.screenshot = [];
 	    };
 	    environment = {
 	          QT_QPA_PLATFORMTHEME = "qt6ct";
