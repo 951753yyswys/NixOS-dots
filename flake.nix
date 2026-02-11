@@ -17,7 +17,7 @@
   }; 
 
  
-  outputs = inputs@{ self, nixpkgs, ... }: {
+  outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
     nixosConfigurations.Qaaxaap = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
@@ -28,6 +28,7 @@
        ./niri.nix
        ./zsh.nix
        ./home.nix
+       home-manager.nixosModules.home-manager
       ];
     }; 
   };
