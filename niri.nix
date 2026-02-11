@@ -52,7 +52,7 @@ in
 	    binds = with config.lib.niri.actions; {
 	      "Mod+Return".action.spawn = "kitty";
 	      "Mod+A".action.spawn = noctalia "launcher toggle";
-	      "Mod+D".action.spawn = "Dolphin";
+	      "Mod+D".action.spawn = "dolphin";
 	      "Mod+W".action.spawn = "firefox";
 	      "Mod+Q" = { repeat = false; action.close-window = []; };
 	      "Mod+Tab" = { repeat = false; action.toggle-overview = []; };
