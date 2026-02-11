@@ -119,7 +119,13 @@
   ];
 
   nixpkgs.config.allowUnfree = true;
-
+  services.dbus.enable = true;
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = with pkgs; [
+    xdg-desktop-portal-gtk  
+    # xdg-desktop-portal-kde
+    xdg-desktop-portal
+  ];
   services.openssh.enable = true;
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
