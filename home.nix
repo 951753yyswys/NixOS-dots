@@ -1,11 +1,7 @@
 { config, pkgs, ... }:
 
 {
-<<<<<<< HEAD
   home-manager.users.Qaaxaap = { config, pkgs, ... }: {
-=======
-  home-manager.users.Qaaxaap = { pkgs, ... }: {
->>>>>>> develop
     nixpkgs.config.allowUnfree = true;
     xdg.dataFile."applications/qq.desktop".text = ''
       [Desktop Entry]
@@ -18,7 +14,6 @@
       Categories=Network;
       Comment=QQ
     '';
-<<<<<<< HEAD
     home.file.".config/nvim" = {
       source = config.lib.file.mkOutOfStoreSymlink "/home/Qaaxaap/nixos/nvim-dots";
       recursive = true;
@@ -35,7 +30,5 @@
         };
       };
     };
-=======
->>>>>>> develop
   };
 }

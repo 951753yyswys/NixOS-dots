@@ -8,12 +8,8 @@
     programs.noctalia-shell = {
       enable = true;
       settings = {
-<<<<<<< HEAD
         settingsVersion = 55;  # 更新版本号
 
-=======
-        settingsVersion = 49;
->>>>>>> develop
         bar = {
           barType = "floating";
           position = "top";
@@ -23,7 +19,6 @@
           showCapsule = true;
           capsuleOpacity = 1;
           capsuleColorKey = "none";
-<<<<<<< HEAD
           contentPadding = 2;
           fontScale = 1;
           mouseWheelAction = "none";
@@ -36,13 +31,6 @@
           marginHorizontal = 4;
           reverseScroll = false;
           showOnWorkspaceSwitch = true;
-=======
-          backgroundOpacity = 0.93;
-          useSeparateOpacity = false;
-          floating = true;
-          marginVertical = 4;
-          marginHorizontal = 4;
->>>>>>> develop
           frameThickness = 8;
           frameRadius = 12;
           outerCorners = true;
@@ -50,7 +38,6 @@
           displayMode = "always_visible";
           autoHideDelay = 500;
           autoShowDelay = 150;
-<<<<<<< HEAD
 
           # 新增字段
           middleClickAction = "none";
@@ -129,77 +116,10 @@
                 showIcon = true;
                 textColor = "none";
                 useFixedWidth = false;
-=======
-          widgets = {
-            left = [
-              {
-		icon = "rocket";
-		iconColor = "none";
-                id = "Launcher";
-              }
-              {
-		clockColor = "none";
-		customFont = "";
-	        formatHorizontal = "HH:mm ddd, MMM dd";
-        	formatVertical = "HH mm - dd MM";
-		id = "Clock";
-		tooltipFormat = "HH:mm ddd, MMM dd";
-		useCustomFont = false;
-	      }
-	      {
-	        compactMode = true;
-		diskPath = "/";
-		iconColor = "none";
-		id = "SystemMonitor";
-		showCpuFreq = false;
-		showCpuTemp = true;
-		showCpuUsage = true;
-		showDiskAvailable = false;
-		showDiskUsage = false;
-		showDiskUsageAsPercent = false;
-		showGpuTemp = false;
-		showLoadAverage = false;
-		showMemoryAsPercent = true;
-		showMemoryUsage = true;
-		showNetworkStats = false;
-		showSwapUsage = true;
-		textColor = "none";
-		useMonospaceFont = true;
-	      }
-	      {
-		colorizeIcons = false;
-		hideMode = "hidden";
-		id = "ActiveWindow";
-		maxWidth = 145;
-		scrollingMode = "hover";
-		showIcon = true;
-		textColor = "none";
-		useFixedWidth = false;
-              }
-              {
-            	compactMode = false;
-            	compactShowAlbumArt = true;
-            	compactShowVisualizer = false;
-            	hideMode = "hidden";
-            	hideWhenIdle = false;
-            	id = "MediaMini";
-            	maxWidth = 145;
-            	panelShowAlbumArt = true;
-            	panelShowVisualizer = true;
-            	scrollingMode = "hover";
-            	showAlbumArt = true;
-            	showArtistFirst = true;
-            	showProgressRing = true;
-            	showVisualizer = false;
-            	textColor = "none";
-            	useFixedWidth = false;
-            	visualizerType  = "linear";
->>>>>>> develop
               }
             ];
             center = [
               {
-<<<<<<< HEAD
                 characterCount = 2;
                 colorizeIcons = false;
                 emptyColor = "secondary";
@@ -217,26 +137,6 @@
                 showBadge = true;
                 showLabelsOnlyWhenOccupied = true;
                 unfocusedIconsOpacity = 1;
-=======
-		characterCount = 2;
-		colorizeIcons = false;
-		emptyColor = "secondary";
-		enableScrollWheel = true;
-		focusedColor = "primary";
-		followFocusedScreen = false;
-		groupedBorderOpacity = 1;
-		hideUnoccupied = false;
-		iconScale = 0.8;
-		id = "Workspace";
-		labelMode = "index";
-		occupiedColor = "secondary";
-		pillSize = 0.6;
-		reverseScroll = false;
-		showApplications = false;
-		showBadge = true;
-		showLabelsOnlyWhenOccupied = true;
-		unfocusedIconsOpacity = 1;
->>>>>>> develop
               }
             ];
             right = [
@@ -248,11 +148,7 @@
                 hidePassive = false;
                 id = "Tray";
                 pinned = [];
-<<<<<<< HEAD
               }
-=======
-              } 
->>>>>>> develop
               {
                 hideWhenZero = false;
                 hideWhenZeroUnread = false;
@@ -260,11 +156,7 @@
                 id = "NotificationHistory";
                 showUnreadBadge = true;
                 unreadBadgeColor = "primary";
-<<<<<<< HEAD
               }
-=======
-              } 
->>>>>>> develop
               {
                 deviceNativePath = "__default__";
                 displayMode = "graphic-clean";
@@ -273,38 +165,25 @@
                 id = "Battery";
                 showNoctaliaPerformance = false;
                 showPowerProfiles = false;
-<<<<<<< HEAD
               }
-=======
-              } 
->>>>>>> develop
               {
                 displayMode = "onhover";
                 iconColor = "none";
                 id = "Bluetooth";
                 textColor = "none";
-<<<<<<< HEAD
               }
-=======
-              } 
->>>>>>> develop
               {
                 displayMode = "onhover";
                 iconColor = "none";
                 id = "Network";
                 textColor = "none";
-<<<<<<< HEAD
               }
-=======
-              } 
->>>>>>> develop
               {
                 displayMode = "onhover";
                 iconColor = "none";
                 id = "Volume";
                 middleClickCommand = "pwvucontrol || pavucontrol";
                 textColor = "none";
-<<<<<<< HEAD
               }
               {
                 displayMode = "onhover";
@@ -313,15 +192,6 @@
                 id = "Brightness";
                 textColor = "none";
               }
-=======
-              } 
-              {
-                displayMode = "onhover";
-                iconColor = "none";
-                id = "Brightness";
-                textColor = "none";
-              } 
->>>>>>> develop
               {
                 colorizeDistroLogo = false;
                 colorizeSystemIcon = "none";
@@ -335,10 +205,7 @@
           };
           screenOverrides = [ ];
         };
-<<<<<<< HEAD
 
-=======
->>>>>>> develop
         general = {
           avatarImage = "";
           dimmerOpacity = 0.2;
@@ -352,7 +219,6 @@
           animationSpeed = 1;
           animationDisabled = false;
           compactLockScreen = false;
-<<<<<<< HEAD
           lockOnSuspend = true;
           lockScreenAnimations = false;
           lockScreenBlur = 0;
@@ -360,10 +226,6 @@
           lockScreenMonitors = [ ];
           passwordChars = false;
           reverseScroll = false;
-=======
-          # lockScreenAnimations = false;
-          lockOnSuspend = true;
->>>>>>> develop
           showSessionButtonsOnLockScreen = true;
           showHibernateOnLockScreen = false;
           enableShadows = true;
@@ -380,7 +242,6 @@
           allowPasswordWithFprintd = false;
           clockStyle = "custom";
           clockFormat = "hh\nmm";
-<<<<<<< HEAD
           enableLockScreenMediaControls = false;
           keybinds = {
             keyDown = ["Down"];
@@ -395,11 +256,6 @@
 
         ui = {
           fontDefault = "Noto sans";
-=======
-        };
-        ui = {
-          fontDefault = "Noto Sans";
->>>>>>> develop
           fontFixed = "Hack";
           fontDefaultScale = 1;
           fontFixedScale = 1;
@@ -407,19 +263,10 @@
           panelBackgroundOpacity = 0.93;
           panelsAttachedToBar = true;
           settingsPanelMode = "attached";
-<<<<<<< HEAD
           settingsPanelSideBarCardStyle = false;
           boxBorderEnabled = false;
         };
 
-=======
-          wifiDetailsViewMode = "grid";
-          bluetoothDetailsViewMode = "grid";
-          networkPanelView = "wifi";
-          bluetoothHideUnnamedDevices = false;
-          boxBorderEnabled = false;
-        };
->>>>>>> develop
         location = {
           name = "Xi'an";
           weatherEnabled = true;
@@ -434,10 +281,7 @@
           hideWeatherTimezone = false;
           hideWeatherCityName = false;
         };
-<<<<<<< HEAD
 
-=======
->>>>>>> develop
         calendar = {
           cards = [
             {
@@ -454,10 +298,7 @@
             }
           ];
         };
-<<<<<<< HEAD
 
-=======
->>>>>>> develop
         wallpaper = {
           enabled = true;
           overviewEnabled = false;
@@ -479,13 +320,10 @@
           transitionEdgeSmoothness = 0.05;
           panelPosition = "follow_bar";
           hideWallpaperFilenames = false;
-<<<<<<< HEAD
           favorites = [];
           overviewBlur = 0.4;
           overviewTint = 0.6;
           skipStartupTransition = false;
-=======
->>>>>>> develop
           useWallhaven = false;
           wallhavenQuery = "";
           wallhavenSorting = "relevance";
@@ -499,7 +337,6 @@
           wallhavenResolutionHeight = "";
           sortOrder = "name";
         };
-<<<<<<< HEAD
 
         appLauncher = {
           enableClipboardHistory = true;
@@ -507,12 +344,6 @@
           density = "default";
           enableClipPreview = true;
           enableSessionSearch = true;
-=======
-        appLauncher = {
-          enableClipboardHistory = true;
-          autoPasteClipboard = false;
-          enableClipPreview = true;
->>>>>>> develop
           clipboardWrapText = true;
           clipboardWatchTextCommand = "wl-paste --type text --watch cliphist store";
           clipboardWatchImageCommand = "wl-paste --type image --watch cliphist store";
@@ -531,7 +362,6 @@
           enableWindowsSearch = true;
           ignoreMouseInput = false;
           screenshotAnnotationTool = "";
-<<<<<<< HEAD
           overviewLayer = false;
         };
 
@@ -562,70 +392,6 @@
           ];
         };
 
-=======
-          # overviewLayer = false;
-        };
-        controlCenter = {
-          position = "close_to_bar_button";
-          diskPath = "/";
-          shortcuts = {
-            left = [
-              {
-                id = "Network";
-              }
-              {
-                id = "Bluetooth";
-              }
-              {
-                id = "WallpaperSelector";
-              }
-              {
-                id = "NoctaliaPerformance";
-              }
-            ];
-            right = [
-              {
-                id = "Notifications";
-              }
-              {
-                id = "PowerProfile";
-              }
-              {
-                id = "KeepAwake";
-              }
-              {
-                id = "NightLight";
-              }
-            ];
-          };
-          cards = [
-            {
-              enabled = true;
-              id = "profile-card";
-            }
-            {
-              enabled = true;
-              id = "shortcuts-card";
-            }
-            {
-              enabled = true;
-              id = "audio-card";
-            }
-            {
-              enabled = false;
-              id = "brightness-card";
-            }
-            {
-              enabled = true;
-              id = "weather-card";
-            }
-            {
-              enabled = true;
-              id = "media-sysmon-card";
-            }
-          ];
-        };
->>>>>>> develop
         systemMonitor = {
           cpuWarningThreshold = 80;
           cpuCriticalThreshold = 90;
@@ -643,31 +409,17 @@
           diskAvailCriticalThreshold = 10;
           batteryWarningThreshold = 20;
           batteryCriticalThreshold = 5;
-<<<<<<< HEAD
           enableDgpuMonitoring = false;
-=======
-          cpuPollingInterval = 1000;
-          gpuPollingInterval = 3000;
-          enableDgpuMonitoring = false;
-          memPollingInterval = 1000;
-          diskPollingInterval = 30000;
-          networkPollingInterval = 1000;
-          loadAvgPollingInterval = 3000;
->>>>>>> develop
           useCustomColors = false;
           warningColor = "";
           criticalColor = "";
           externalMonitor = "resources || missioncenter || jdsystemmonitor || corestats || system-monitoring-center || gnome-system-monitor || plasma-systemmonitor || mate-system-monitor || ukui-system-monitor || deepin-system-monitor || pantheon-system-monitor";
         };
-<<<<<<< HEAD
 
-=======
->>>>>>> develop
         dock = {
           enabled = false;
           position = "bottom";
           displayMode = "auto_hide";
-<<<<<<< HEAD
           dockType = "floating";
           launcherPosition = "end";
           showDockIndicator = false;
@@ -679,10 +431,6 @@
           indicatorOpacity = 0.6;
           indicatorThickness = 3;
           launcherIconColor = "none";
-=======
-          backgroundOpacity = 1;
-          floatingRatio = 1;
->>>>>>> develop
           size = 1;
           onlySameOutput = true;
           monitors = [ ];
@@ -692,7 +440,6 @@
           inactiveIndicators = false;
           deadOpacity = 0.6;
           animationSpeed = 1;
-<<<<<<< HEAD
           groupApps = false;
           groupClickAction = "cycle";
           groupContextMenuMode = "extended";
@@ -703,25 +450,16 @@
           wifiEnabled = true;
           airplaneModeEnabled = false;
           disableDiscoverability = false;
-=======
-        };
-        network = {
-          wifiEnabled = true;
->>>>>>> develop
           bluetoothRssiPollingEnabled = false;
           bluetoothRssiPollIntervalMs = 10000;
           wifiDetailsViewMode = "grid";
           bluetoothDetailsViewMode = "grid";
           bluetoothHideUnnamedDevices = false;
-<<<<<<< HEAD
           networkPanelView = "wifi";
           # 新增字段
           bluetoothAutoConnect = true;
         };
 
-=======
-        };
->>>>>>> develop
         sessionMenu = {
           enableCountdown = true;
           countdownDuration = 10000;
@@ -729,7 +467,6 @@
           showHeader = true;
           largeButtonsStyle = true;
           largeButtonsLayout = "single-row";
-<<<<<<< HEAD
           showKeybinds = true;
           powerOptions = [
             { action = "lock"; enabled = true; keybind = "1"; }
@@ -747,39 +484,6 @@
           clearDismissed = true;
           density = "default";
           enableMarkdown = false;
-=======
-          showNumberLabels = true;
-          powerOptions = [
-            {
-              action = "lock";
-              enabled = true;
-            }
-            {
-              action = "suspend";
-              enabled = true;
-            }
-            {
-              action = "hibernate";
-              enabled = true;
-            }
-            {
-              action = "reboot";
-              enabled = true;
-            }
-            {
-              action = "logout";
-              enabled = true;
-            }
-            {
-              action = "shutdown";
-              enabled = true;
-            }
-          ];
-        };
-        notifications = {
-          enabled = true;
-          monitors = [ ];
->>>>>>> develop
           location = "top_right";
           overlayLayer = true;
           backgroundOpacity = 1;
@@ -805,30 +509,17 @@
           enableKeyboardLayoutToast = true;
           enableBatteryToast = true;
         };
-<<<<<<< HEAD
 
-=======
->>>>>>> develop
         osd = {
           enabled = true;
           location = "top_right";
           autoHideMs = 2000;
           overlayLayer = true;
           backgroundOpacity = 1;
-<<<<<<< HEAD
           enabledTypes = [ 0 1 2 ];
           monitors = [ ];
         };
 
-=======
-          enabledTypes = [
-            0
-            1
-            2
-          ];
-          monitors = [ ];
-        };
->>>>>>> develop
         audio = {
           volumeStep = 5;
           volumeOverdrive = false;
@@ -837,28 +528,18 @@
           mprisBlacklist = [ ];
           preferredPlayer = "";
           volumeFeedback = false;
-<<<<<<< HEAD
           volumeFeedbackSoundFile = "";
         };
 
         brightness = {
           backlightDeviceMappings = [];
-=======
-        };
-        brightness = {
->>>>>>> develop
           brightnessStep = 5;
           enforceMinimum = true;
           enableDdcSupport = false;
         };
-<<<<<<< HEAD
 
         colorSchemes = {
           useWallpaperColors = true;
-=======
-        colorSchemes = {
-          useWallpaperColors = false;
->>>>>>> develop
           predefinedScheme = "Noctalia (default)";
           darkMode = true;
           schedulingMode = "off";
@@ -867,18 +548,12 @@
           generationMethod = "tonal-spot";
           monitorForColors = "";
         };
-<<<<<<< HEAD
 
-=======
->>>>>>> develop
         templates = {
           activeTemplates = [ ];
           enableUserTheming = false;
         };
-<<<<<<< HEAD
 
-=======
->>>>>>> develop
         nightLight = {
           enabled = false;
           forced = false;
@@ -888,10 +563,7 @@
           manualSunrise = "06:30";
           manualSunset = "18:30";
         };
-<<<<<<< HEAD
 
-=======
->>>>>>> develop
         hooks = {
           enabled = false;
           wallpaperChange = "";
@@ -903,7 +575,6 @@
           startup = "";
           session = "";
         };
-<<<<<<< HEAD
 
         plugins = {
           autoUpdate = false;
@@ -949,15 +620,6 @@
           screenOffTimeout = 600;
           suspendCommand = "";
           suspendTimeout = 1800;
-=======
-        plugins = {
-          autoUpdate = false;
-        };
-        desktopWidgets = {
-          enabled = false;
-          gridSnap = false;
-          monitorWidgets = [ ];
->>>>>>> develop
         };
       };
     };

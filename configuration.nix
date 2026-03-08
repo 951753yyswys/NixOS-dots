@@ -11,7 +11,6 @@
     ];
 
   # Use the systemd-boot EFI boot loader.
-<<<<<<< HEAD
   boot.loader.systemd-boot.enable = false;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.grub = {
@@ -23,11 +22,6 @@
   };
   boot.loader.efi.efiSysMountPoint = "/efi";
   # boot.loader.efi.bootloaderId = "NixOS";
-=======
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
->>>>>>> develop
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
@@ -39,26 +33,17 @@
   # Set your time zone.
   time.timeZone = "Asia/Shanghai";
   
-<<<<<<< HEAD
   services.fprintd.enable = true;
 
   nix.settings = {
     substituters = [
 #"https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store?priority=10"
-=======
-  nix.settings = {
-    substituters = [
-      "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store?priority=10"
->>>>>>> develop
       "https://mirrors.ustc.edu.cn/nix-channels/store?priority=5"
       "https://cache.nixos.org"
     ];
     experimental-features = [ "nix-command" "flakes" ];
   };
-<<<<<<< HEAD
   networking.proxy.default = "http://127.0.0.1:7890";
-=======
->>>>>>> develop
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -77,12 +62,6 @@
   services.desktopManager.plasma6.enable = true;
   services.displayManager.sddm.enable = true;
 
-<<<<<<< HEAD
-=======
-
-  
-
->>>>>>> develop
   # Configure keymap in X11
   services.xserver.xkb.layout = "us";
   # services.xserver.xkb.options = "eurosign:e,caps:escape";
@@ -107,11 +86,7 @@
   users.users.Qaaxaap = {
     isNormalUser = true;
     description = "Qaaxaap";
-<<<<<<< HEAD
     extraGroups = [ "networkmanager" "wheel" "kvm" ];
-=======
-    extraGroups = [ "networkmanager" "wheel" ]; # Enable ‘sudo’ for the user.
->>>>>>> develop
     packages = with pkgs; [];
   };
 
@@ -119,7 +94,6 @@
   services.flatpak.enable = true;
 
   # List packages installed in system profile.
-<<<<<<< HEAD
   environment.systemPackages = with pkgs; [
     vim
     ntfs3g
@@ -134,40 +108,24 @@
     git
     perl
     gparted
-=======
-  # You can use https://search.nixos.org/ to find more packages (and options).
-  environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
-    kitty
-    git
-    perl
->>>>>>> develop
     cargo
     qq 
     killall
     gcc
     clang
-<<<<<<< HEAD
     brightnessctl
-=======
->>>>>>> develop
     gdb
     cmake
     ninja
     meson
-<<<<<<< HEAD
     baidupcs-go
     zip
     inetutils
-=======
->>>>>>> develop
     vscode
     vlc
     valgrind
     cppcheck
     clang-tools
-<<<<<<< HEAD
     # clash-verge-rev
     mihomo
     neovim
@@ -185,8 +143,6 @@
     tectonic
     mermaid-cli
     tree-sitter
-=======
->>>>>>> develop
     pipewire
     xwayland-satellite
     kdePackages.kirigami
@@ -195,7 +151,6 @@
     kdePackages.kpipewire
     libsForQt5.kirigami2
     libsForQt5.kirigami-addons
-<<<<<<< HEAD
     virt-viewer
     libguestfs-with-appliance
     spice spice-gtk
@@ -205,8 +160,6 @@
     qbittorrent
     quickemu              # 新增：Quickemu 核心工具
     qemu                   # Quickemu 依赖 QEMU
-=======
->>>>>>> develop
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -217,10 +170,7 @@
     # xdg-desktop-portal-kde
     xdg-desktop-portal
   ];
-<<<<<<< HEAD
 
-=======
->>>>>>> develop
   services.openssh.enable = true;
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -230,7 +180,6 @@
   #   enableSSHSupport = true;
   # };
 
-<<<<<<< HEAD
   # Open ports in the firewall.
   networking.firewall.enable = false;
   networking.firewall.allowedTCPPorts = [ 7890 7891 7892 ];
@@ -238,18 +187,6 @@
   networking.firewall.trustedInterfaces = [ "Meta" ];
 
   services.spice-vdagentd.enable = true;
-=======
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
->>>>>>> develop
 
   # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you
@@ -276,14 +213,6 @@
   home-manager.users.Qaaxaap = { pkgs, ... }: {
     home.stateVersion = "25.11";  
     home.packages = [ ] ;
-<<<<<<< HEAD
   };
   system.stateVersion = "25.11"; # Did you read the comment?
 }
-=======
-    };
-  system.stateVersion = "25.11"; # Did you read the comment?
-
-}
-
->>>>>>> develop
