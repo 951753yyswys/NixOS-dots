@@ -92,11 +92,18 @@
     packages = with pkgs; [];
   };
 
+  hardware.enableRedistributableFirmware = true;
+
   programs.firefox.enable = true;
   services.flatpak.enable = true;
 
   # List packages installed in system profile.
   environment.systemPackages = with pkgs; [
+    clang-tools
+    clang
+    llvmPackages_latest.libcxx
+    llvmPackages_latest.libllvm
+    llvmPackages_latest.clang
     vim
     ntfs3g
     wget
@@ -163,6 +170,7 @@
     quickemu
     qemu
     xdg-desktop-portal
+    linux-firmware
   ];
 
   environment.sessionVariables = {

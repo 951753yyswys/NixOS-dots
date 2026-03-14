@@ -135,6 +135,7 @@
                 occupiedColor = "secondary";
                 pillSize = 0.6;
                 showApplications = false;
+                showApplicationsHover = false;
                 showBadge = true;
                 showLabelsOnlyWhenOccupied = true;
                 unfocusedIconsOpacity = 1;
