@@ -38,6 +38,7 @@
        ./network.nix
        ./winapps.nix
        ./nh.nix
+       ./sddm.nix
        home-manager.nixosModules.home-manager
       ];
     }; 
