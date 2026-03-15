@@ -38,6 +38,7 @@
        ./network.nix
        ./winapps.nix
        ./nh.nix
+       ./lightdm.nix
        home-manager.nixosModules.home-manager
       ];
     }; 

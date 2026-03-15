@@ -65,17 +65,7 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.desktopManager.plasma6.enable = true;
-# services.displayManager.sddm.enable = true;
-  services.displayManager.sddm = {
-    enable = true;
-#package = pkgs.kdePackages.sddm;
-    theme = "sddm-astronaut-theme";
-    extraPackages = [
-      pkgs.sddm-astronaut
-      pkgs.kdePackages.qt5compat
-      pkgs.kdePackages.qtmultimedia
-    ];
-  };
+
   environment.etc."xdg/menus/applications.menu".source = 
     "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
 
