@@ -9,7 +9,6 @@
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
-      # inputs.quickshell.follows = "quickshell";
     };
     niri.url = "github:sodiboo/niri-flake";
     home-manager.url = "github:nix-community/home-manager";
@@ -20,26 +19,34 @@
     };
   }; 
 
- 
   outputs = inputs@{ self, winapps, nixpkgs, home-manager, ... }: {
-    packages.x86_64-linux.space-grotesk = import ./font/space-grotesk.nix {
-      inherit (nixpkgs.legacyPackages.x86_64-linux) lib stdenv fetchzip;
+    packages.x86_64-linux = {
+      space-grotesk = import ./font/space-grotesk.nix {
+        inherit (nixpkgs.legacyPackages.x86_64-linux) lib stdenv fetchzip;
+      };
+      nody-greeter = import ./pkgs/nody-greeter {
+        inherit (nixpkgs.legacyPackages.x86_64-linux) lib stdenv dpkg fetchurl;
+      };
+      lightdm-webkit2-theme-glorious = import ./pkgs/lightdm-webkit2-theme-glorious {
+        inherit (nixpkgs.legacyPackages.x86_64-linux) lib stdenv fetchzip;
+      };
     };
+
     nixosConfigurations.Qaaxaap = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit self inputs winapps; };
       modules = [
-       ./configuration.nix
-       ./noctalia.nix
-       ./chinese.nix
-       ./niri.nix
-       ./zsh.nix
-       ./home.nix
-       ./network.nix
-       ./winapps.nix
-       ./nh.nix
-       ./lightdm.nix
-       home-manager.nixosModules.home-manager
+        ./configuration.nix
+        ./noctalia.nix
+        ./chinese.nix
+        ./niri.nix
+        ./zsh.nix
+        ./home.nix
+        ./network.nix
+        ./winapps.nix
+        ./nh.nix
+        ./lightdm.nix
+        home-manager.nixosModules.home-manager
       ];
     }; 
   };
