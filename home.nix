@@ -1,10 +1,20 @@
-{ config, pkgs, ... }:
-
+{ config, pkgs, lib, ... }:
 {
   home-manager.users.Qaaxaap = { config, pkgs, ... }: {
     home.sessionVariables = {
       NIXPKGS_QT6_QML_IMPORT_PATH = "${pkgs.kdePackages.kirigami.unwrapped}/lib/qt-6/qml"; 
       QT_QPA_PLATFORMTHEME = "kde"; 
+      PATH = lib.concatStringsSep ":" [
+        "$HOME/.local/bin"
+        "$HOME/.nix-profile/bin"
+        "/etc/profiles/per-user/Qaaxaap/bin"
+        "/run/wrappers/bin"
+        "/run/current-system/sw/bin"
+        "$HOME/.local/share/flatpak/exports/bin"
+        "/var/lib/flatpak/exports/bin"
+        "/nix/var/nix/profiles/default/bin"
+        "/usr/bin"
+      ];
     };
     nixpkgs.config.allowUnfree = true;
     xdg.dataFile."applications/qq.desktop".text = ''

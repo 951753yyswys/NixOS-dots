@@ -42,6 +42,7 @@
     experimental-features = [ "nix-command" "flakes" ];
   };
   networking.proxy.default = "http://127.0.0.1:7890";
+  networking.search = [ "qaaxaap.github" ];
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -63,6 +64,9 @@
   services.xserver.enable = true;
   services.desktopManager.plasma6.enable = true;
   services.displayManager.sddm.enable = true;
+
+  environment.etc."xdg/menus/applications.menu".source = 
+    "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
 
   # Configure keymap in X11
   services.xserver.xkb.layout = "us";
@@ -96,6 +100,7 @@
 
   programs.firefox.enable = true;
   services.flatpak.enable = true;
+  services.tailscale.enable = true;
 
   # List packages installed in system profile.
   environment.systemPackages = with pkgs; [
@@ -139,6 +144,7 @@
     mihomo
     neovim
     # gui-for-clash
+    tailscale
     gnumake
     ripgrep
     fd 

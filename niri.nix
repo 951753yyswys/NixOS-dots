@@ -85,7 +85,7 @@ in
               "Mod+H".action.toggle-column-tabbed-display = [];
             };
             environment = {
-              QT_QPA_PLATFORMTHEME = "qt6ct";
+              QT_QPA_PLATFORMTHEME = "kde";
               ALL_PROXY = "http://127.0.0.1:7890";
               LANG = "zh_CN.UTF-8";
               LC_CTYPE = "zh_CN.UTF-8";
